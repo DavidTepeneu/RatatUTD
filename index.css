@@ -22,3 +22,9 @@ li {
 li a {
     margin-right: 25px;
 }
+
+th, td {
+    padding: 15px;
+    padding-left: 60px;
+    padding-right: 70px;
+  }
