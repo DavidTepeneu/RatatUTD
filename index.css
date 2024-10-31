@@ -11,9 +11,14 @@
     justify-content: space-between;
 }
 
+.logo {
+    margin-left: 35px;
+}
+
 .logo a{
     font-size: 35px;
 }
+
 li {
     list-style: none;
     display: inline-block;
