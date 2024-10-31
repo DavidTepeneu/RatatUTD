@@ -95,10 +95,23 @@ li a {
 }
 
 .plusButton {
-    position: sticky;
-    z-index: 1;
-    bottom: 0;
-    /* background-color: red; */
+    position: absolute;
+    border-radius: 50%;
+    top: 92%;
+    left: 90%;
+    color: white;
+    background: rgb(44,167,255);
+    border:none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: large;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.plusButton:hover {
+    background-color: white;
+    color: white;
 }
 
 .show {
