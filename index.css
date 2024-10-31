@@ -9,26 +9,62 @@
     border-color: black;
 }
 .navdiv{
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    border-style: dashed;
+    border-width: 2px;
+    border-color: black;
+}
+
+.slogan {
+    margin-left: 35px;
+    font-style: italic;
+    display: flex;
+    align-self: left;
+
+    border-style: dashed;
+    border-width: 2px;
+    border-color: black;
 }
 
 .logo {
     margin-left: 35px;
+    font-size: xx-large;
+    color: white;
+    font-style: bold;
+
+    border-style: dashed;
+    border-width: 2px;
+    border-color: black;
 }
 
 .logo a{
     font-size: 35px;
+
+    border-style: dashed;
+    border-width: 2px;
+    border-color: black;
 }
 
 li {
     list-style: none;
     display: inline-block;
+
+    border-style: dashed;
+    border-width: 2px;
+    border-color: black;
 }
 
 li a {
     margin-right: 25px;
+    color: white;
+
+    border-style: dashed;
+    border-width: 2px;
+    border-color: black;
 }
 
 .table {
@@ -36,4 +72,5 @@ li a {
     border-width: 2px;
     border-color: black;
     text-align: center;
+    width: 100%;
 }
