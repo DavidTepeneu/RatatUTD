@@ -26,3 +26,27 @@ document.querySelector("#reviewTable tbody").innerHTML = myArr
       `<tr><td>${Review.name}</td><td><img src=${Review.pfp} style="width: 50px; height: 50px"></td><td>${Review.location}</td><td>${Review.review}</td><td>${Review.favItem}</td><td>${Review.favItemComment}</td></tr>`
   )
   .join("");
+
+plusButton.addEventListener(
+  "click",
+  function(){
+    addReview.classList.add("show");
+  }
+);
+closePopup.addEventListener(
+  "click",
+  function() {
+    addReview.classList.remove("show");
+  }
+);
+
+window.addEventListener(
+  "click",
+  function (event) {
+      if (event.target == addReview) {
+          addReview.classList.remove(
+              "show"
+          );
+      }
+  }
+);
