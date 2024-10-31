@@ -4,6 +4,9 @@
 .navbar{
     background:rgb(70, 193, 255);
     font-family: calibri;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: black;
 }
 .navdiv{
     display: flex;
@@ -28,8 +31,9 @@ li a {
     margin-right: 25px;
 }
 
-th, td {
-    padding: 15px;
-    padding-left: 60px;
-    padding-right: 70px;
-  }
+.table {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: black;
+    text-align: center;
+}
