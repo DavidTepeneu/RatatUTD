@@ -2,11 +2,12 @@
     text-decoration: none;
 }
 .navbar{
-    background:rgb(70, 193, 255);
+    background: rgb(44,167,255);
+    background: radial-gradient(circle, rgba(44,167,255,1) 0%, rgba(178,223,255,1) 0%, rgba(246,251,255,1) 10%, rgba(0,148,255,1) 15%, rgba(63,175,255,1) 100%);
     font-family: calibri;
-    border-style: dashed;
+    /*border-style: dashed;
     border-width: 2px;
-    border-color: black;
+    border-color: black;*/
 }
 .navdiv{
     height: 80px;
@@ -14,20 +15,19 @@
     align-items: center;
     justify-content: space-between;
 
-    border-style: dashed;
+    /*border-style: dashed;
     border-width: 2px;
-    border-color: black;
+    border-color: black;*/
 }
 
 .slogan {
-    margin-left: 35px;
+    margin-left: 50px;
+    color: white;
     font-style: italic;
-    display: flex;
-    align-self: left;
-
-    border-style: dashed;
+    font-size: large;
+    /*border-style: dashed;
     border-width: 2px;
-    border-color: black;
+    border-color: black;*/
 }
 
 .logo {
@@ -36,41 +36,41 @@
     color: white;
     font-style: bold;
 
-    border-style: dashed;
+    /*border-style: dashed;
     border-width: 2px;
-    border-color: black;
+    border-color: black;*/
 }
 
 .logo a{
     font-size: 35px;
 
-    border-style: dashed;
+    /*border-style: dashed;
     border-width: 2px;
-    border-color: black;
+    border-color: black;*/
 }
 
 li {
     list-style: none;
     display: inline-block;
 
-    border-style: dashed;
+    /*border-style: dashed;
     border-width: 2px;
-    border-color: black;
+    border-color: black;*/
 }
 
 li a {
-    margin-right: 25px;
+    margin-right: 50px;
     color: white;
 
-    border-style: dashed;
+    /*border-style: dashed;
     border-width: 2px;
-    border-color: black;
+    border-color: black;*/
 }
 
 .table {
-    border-style: dashed;
+    /*border-style: dashed;
     border-width: 2px;
-    border-color: black;
+    border-color: black;*/
     text-align: center;
     width: 100%;
 }
