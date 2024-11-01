@@ -28,14 +28,40 @@
         <button class="plusButton" type="submit" id="plusButton">Add Review</button>
         <div id="addReview" class="popup">
             <div class="popup-content">
-                <h1>add review!</h1>
-                <p>Name</p>
-                <input type="text"> <br>
-                <p>Comment</p>
+                <h1>Add a review!</h1>
+                <div>
+                    <p>Name</p>
+                    <input type="text" placeholder="Alfredo Linguini"> <br>
+                </div>
+                
+                <div>
+                    <p>Restaurant</p>
+                    <input type="text" placeholder="Gusto"> <br>
+                </div>
+                
+                <div>
+                    <p>Review</p>
+                    <input rows="2" placeholder="type in here"></span>
+                </div>
+                
+                <div>
+                    <p>Favorite Item</p>
+                    <input type="text" placeholder="i like alc"> <br>
+                </div>
+                
+                <div>
+                    <p>Why?</p>
+                    <input type="text" placeholder="0.08 is a myth"> <br>
+                </div>
+                
                 <!-- <textarea type="textarea"> <br> -->
-                <textarea rows = "6"></textarea>
-                <br>
-                <button id="closePopup">x</button>
+                <!-- <textarea rows = "6"></textarea>
+                <br> -->
+                <div class="Revbuttons">
+                    <button id="closePopup">x</button>
+                    <button id="submit">submit</button>
+                </div>
+                
             </div>
         </div>
         <table class="table" border="1" id="reviewTable">

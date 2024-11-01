@@ -92,6 +92,26 @@ li a {
     margin: 10% auto;
     width: 30%;
     padding: 20px;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: black;
+    text-align:center
+}
+
+input::placeholder {
+    color: grey;
+    opacity: 0.5;
+}
+
+.Revbuttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+textarea::placeholder {
+    color: grey;
+    opacity: 0.5;
 }
 
 .plusButton {
