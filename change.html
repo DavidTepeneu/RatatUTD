@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <title>HTML Elements Reference</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    </head>
+
+<body>
+    <div class="main">
+        <h1>RatatoUTD</h1>
+        <h3>Enter your credentials to Sign up/Log in!</h3>
+        <form action="login.php" method="POST">
+            <label for="first">
+                Username:
+            </label>
+            <input type="text" name="username" 
+                placeholder="Enter your Username" required>
+
+            <label for="password">
+                Old Password:
+            </label>
+            <input type="password" name="oldpassword" 
+                placeholder="Enter your Old Password" required>
+
+            <label for="password">
+                Old Password:
+            </label>
+            <input type="password" name="newpassword" 
+                placeholder="Enter your New Password" required>
+
+            <div class="wrap">
+                <a href="homepage.html">
+                    <button type="submit" value="login">
+                        Log In
+                    </button>
+                </a>
+                
+            </div>
+        </form>
+        <p>Don't wanna register?
+            <a href="homepage.html" style="text-decoration: none;">
+                Continue as AnonyMOUSE
+            </a>
+        </p>
+    </div>
+</body>
