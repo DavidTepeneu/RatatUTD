@@ -11,26 +11,23 @@
         <div class="main">
             <h1>RatatoUTD</h1>
             <h3>Enter your credentials to Sign up/Log in!</h3>
-            <form action="login.php" method="POST">
+            <form id="loginForm" action="login.php" method="POST">
                 <label for="first">
                     Username:
                 </label>
-                <input type="text" name="username" 
+                <input type="text" name="username" id="user"
                     placeholder="Enter your Username" required>
     
                 <label for="password">
                     Password:
                 </label>
-                <input type="password" name="password" 
+                <input type="password" name="password" id="pswd"
                     placeholder="Enter your Password" required>
     
                 <div class="wrap">
-                    <a href="homepage.html">
-                        <button type="submit" value="login">
-                            Log In
-                        </button>
-                    </a>
-                    
+                    <button type="submit" value="login">
+                        Log In
+                    </button>
                 </div>
             </form>
             <p>Don't wanna register?
@@ -45,5 +42,6 @@
                 </a>
             </p>
         </div>
+        <script src="validate.js"></script>
     </body>
 </html>
