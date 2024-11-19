@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $query = "SELECT * FROM login WHERE Username='$username' AND Password='$password'";
     
     $result = $conn->query($query);
-
+    
     // Login successful
     if($result->num_rows == 1){
         header("Location: homepage.html");
