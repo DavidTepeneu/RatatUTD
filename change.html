@@ -11,30 +11,30 @@
 <body>
     <div class="main">
         <h1>RatatoUTD</h1>
-        <h3>Enter your credentials to Sign up/Log in!</h3>
-        <form action="change.php" method="POST">
+        <h3>Enter your credentials to Change Password!</h3>
+        <form id="loginForm2" action="change.php" method="POST">
             <label for="first">
                 Username:
             </label>
-            <input type="text" name="username" 
+            <input type="text" name="username" id="user2"
                 placeholder="Enter your Username" required>
 
             <label for="password">
                 Old Password:
             </label>
-            <input type="password" name="oldpassword" 
+            <input type="password" name="oldpassword" id="pswd2"
                 placeholder="Enter your Old Password" required>
 
             <label for="password">
-                Old Password:
+                New Password:
             </label>
-            <input type="password" name="newpassword" 
+            <input type="password" name="newpassword" id="newpswd"
                 placeholder="Enter your New Password" required>
 
             <div class="wrap">
                 <a href="index.html">
                     <button type="submit" value="change">
-                        Log In
+                        Change Password
                     </button>
                 </a>
                 
@@ -46,4 +46,5 @@
             </a>
         </p>
     </div>
+    <script src="validate2.js"></script>
 </body>
