@@ -1,4 +1,18 @@
 Res_name,Rev_id,Rating,Rev_comment,I_comment,Username,Fav_item
 Gusteau's,0,5,My best friend Remy makes the food and it slaps. If I could give this place a 10 out of 5 I would. He always says anyone can cook but not like him. He is one of a kind. A true culinary genius. There are no words.,Great name.,thatOneRat,Ratatouille
-Gusteau's,1,1,Outrageous health code violations everywhere you look. I saw a rat touching my food with his little rat hands. DO NOT EAT HERE. PLAGUE CITY.,The bread is so good with olive oil,kaciedances,Bread
-La Ratatouille,La Ratatouille,La Ratatouille,La Ratatouille,La Ratatouille,La Ratatouille,La Ratatouille
+Gusteau's,1,1,Outrageous health code violations everywhere you look. I saw a rat touching my food with his little rat hands. DO NOT EAT HERE. PLAGUE CITY.,The bread is so good with olive oil,kaciedance,Bread
+Gusteau's,2,5,Just truly one of the greatest restaurants there are! The owner must be proud!,Even their water is so fresh and amazing!,anyoneCanChef,Water
+Gusteau's,3,2,This once honorable restaurant has RATS EVERYWHERE!!! DO NOT EAT HERE YOU WILL GET TETANUS!,NULL,gymrat,NULL
+Gusteau's,4,5,NULL,NULL,anyoneCanChef,NULL
+Gusteau's,5,4,A true culinary masterpiece. Better than my mom's cooking!,NULL,kaciedance,NULL
+Gusteau's,6,3,La Ratatouille is better.,This is still good though!,iLovePasta,Ratatouille
+La Ratatouille,0,4,Now that Remy owns his own restaurant he doesn't give me any free food anymore because there are loans to pay. The food is still bomb tho. 4/5.,The napkins are so yummy here. And they're free.,thatOneRat,Napkin
+La Ratatouille,1,3,The food is alright but I believe that it is overhyped! And expensive!,The sauce was the best part and it made the experience for me!,youCantCook,Alfredo sauce
+La Ratatouille,2,5,Good food.,NULL,TheAntonagonist,Ratatouille
+La Ratatouille,3,1,My wife left me because of this food…,NULL,BetterThanGusteau,NULL
+Sewers,0,5,GUYS! RAT MEETUP IN THE SEWERS EVERY FRIDAY NIGHT! THIS PLACE ROCKS!!!,NULL,gymrat,Leftovers
+Taco Bell,0,1,Review bombing Taco Bell because they are out of Baja Blasts.,NULL,iLoveNapkins,NULL
+Taco Bell,1,1,Review bombing Taco Bell because they are out of Baja Blasts again.,NULL,iLoveNapkins,NULL
+Taco Bell,2,5,Just had a transcendental experience eating their Gordita Crunch Wrap.,It's perfect. Don't get the Dorito version though.,iLovePasta,Gordita Crunch Wrap
+Taco Bell,3,4,They got Baja Blasts I don't know what that one guy is saying.,Truly the best soft drink!,thatOneRat,Dr Pepper
+Taco Bell,4,2,THEY DON’T HAVE BAJA BLASTS!!! WHY AM I BEING FED LIES!!!,NULL,iLoveNapkins,NULL
