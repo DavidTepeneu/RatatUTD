@@ -1,3 +1,5 @@
+console.log("Script loaded");
+
 function Review(name, pfp, location, review, favItem, favItemComment) {
   this.name = name;
   this.pfp = pfp;
@@ -27,26 +29,15 @@ document.querySelector("#reviewTable tbody").innerHTML = myArr
   )
   .join("");
 
-plusButton.addEventListener(
-  "click",
-  function(){
-    addReview.classList.add("show");
-  }
-);
-closePopup.addEventListener(
-  "click",
-  function() {
+plusButton.addEventListener("click", function () {
+  addReview.classList.add("show");
+});
+closePopup.addEventListener("click", function () {
+  addReview.classList.remove("show");
+});
+
+window.addEventListener("click", function (event) {
+  if (event.target == addReview) {
     addReview.classList.remove("show");
   }
-);
-
-window.addEventListener(
-  "click",
-  function (event) {
-      if (event.target == addReview) {
-          addReview.classList.remove(
-              "show"
-          );
-      }
-  }
-);
+});
