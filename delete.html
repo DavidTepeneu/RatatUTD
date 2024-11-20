@@ -11,40 +11,29 @@
 <body>
     <div class="main">
         <h1>RatatoUTD</h1>
-        <h3>Enter your credentials to change password!</h3>
-        <form id="loginForm2" action="change.php" method="POST">
+        <h3>Enter your credentials to DELETE ACCOUNT!</h3>
+        <form id="loginForm3" action="delete.php" method="POST">
             <label for="first">
                 Username:
             </label>
-            <input type="text" name="username" id="user2"
+            <input type="text" name="username" id="user3"
                 placeholder="Enter your Username" required>
 
             <label for="password">
-                Old Password:
+                Password:
             </label>
-            <input type="password" name="oldpassword" id="pswd2"
+            <input type="password" name="password" id="pswd3"
                 placeholder="Enter your Old Password" required>
-
-            <label for="password">
-                New Password:
-            </label>
-            <input type="password" name="newpassword" id="newpswd"
-                placeholder="Enter your New Password" required>
 
             <div class="wrap">
                 <a href="index.html">
-                    <button type="submit" value="change">
-                        Change password
+                    <button actype="submit" value="change">
+                        Delete!!! Cannot be undone
                     </button>
                 </a>
                 
             </div>
         </form>
-        <p>Don't wanna register?
-            <a href="homepage.html" style="text-decoration: none;">
-                Continue as AnonyMOUSE
-            </a>
-        </p>
     </div>
-    <script src="validate2.js"></script>
+    <!-- <script src="validate3.js"></script> -->
 </body>

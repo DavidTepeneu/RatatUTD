@@ -11,55 +11,51 @@
             <img src= "assets/mascot.png" style="width: 5%; height: 7%; position: absolute; left: 47.5%; top: 1.5%;">
         </div>
         <ul>
-            <li><a href="#">Home Screen</a></li>
-            <li><a href="#">Leaderboard</a></li>
+            <li><a href="homepage.html">Home Screen</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
         </ul>
     </div>
 </nav>
 <button class="plusButton" type="submit" id="plusButton">Add Review</button>
 <div id="addReview" class="popup">
     <div class="popup-content">
-        <h1>Add a review!</h1>
-        <div>
-            <p>Name</p>
-            <input type="text" placeholder="Alfredo Linguini"> <br>
-        </div>
-        
-        <div>
-            <p>Restaurant</p>
-            <input type="text" placeholder="Gusto"> <br>
-        </div>
-        
-        <div>
-            <p>Review</p>
-            <input rows="2" placeholder="type in here"></span>
-        </div>
-        
-        <div>
-            <p>Favorite Item</p>
-            <input type="text" placeholder="i like alc"> <br>
-        </div>
-        
-        <div>
-            <p>Why?</p>
-            <input type="text" placeholder="0.08 is a myth"> <br>
-        </div>
-        
-        <!-- <textarea type="textarea"> <br> -->
-        <!-- <textarea rows = "6"></textarea>
-        <br> -->
-        <div class="Revbuttons">
-            <button id="closePopup">x</button>
-            <button id="submit">submit</button>
-        </div>
-        
+        <form action="addreview.php" method="post">
+            <label for="name">Name</label> <br>
+            <input type="text" placeholder="Review display name!" id="name" name="name"> <br> <br>
+
+            <label for="restaurant">Restaurant</label> <br>
+            <input type="text" placeholder="For what restaurant?" id="restaurant" name="restaurant"> <br> <br>
+
+            <label for="cuisine">Cuisine</label> <br>
+            <input type="text" placeholder="What type of food?" id="cuisine" name="cuisine"> <br> <br>
+
+            <label for="address">Address</label> <br>
+            <textarea placeholder="Where is this place?" id="address" name="address"></textarea> <br> <br>
+
+            <label for="distance">Distance from campus</label> <br>
+            <input type="text" placeholder="How far is this place?" id="distance" name="distance"> <br> <br>
+
+            <label for="rating">Rating</label> <br>
+            <input type="text" placeholder="What's your rating 1-5?" id="rating" name="rating"> <br> <br>
+
+            <label for="review">Review</label> <br>
+            <textarea placeholder="Why did you rate that?" id="review" name="review"></textarea> <br> <br>
+
+            <label for="item">Favorite Item</label> <br>
+            <input type="text" placeholder="What did you love most?" id="item" name="item"> <br> <br>
+
+            <label for="reason">Item review</label> <br>
+            <textarea placeholder="Why'd you like that item?" id="reason" name="reason"></textarea> <br> <br>
+
+            <input type="submit" value="submit review" id="button" class="btn btn-primary"/>
+        </form>
     </div>
 </div>
 <table class="table" border="1" id="reviewTable">
     <thead>
         <tr>
             <th style="width: 10%">Name</th>
-            <th style="width: 10%">Pfp</th>
+            <th style="width: 10%">Rev_ID</th>
             <th style="width: 10%">Location</th>
             <th style="width: 40%">Comment</th>
             <th style="width: 10%">Favorite Item</th>

@@ -6,13 +6,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $oldpassword = $_POST['oldpassword'];
     $newpassword = $_POST['newpassword'];
 
-    $conn = new mysqli("localhost", "root", "", "auth");
+    $conn = new mysqli("localhost", "root", "", "ratatutd", "3306");
 
     if($conn->connect_error){
         die("Connection failed: ". $conn->connect_error);
     }
 
-    $sql = "UPDATE login SET password='$newpassword' WHERE username='$username' AND password='$oldpassword'";
+    $sql = "UPDATE users SET Password='$newpassword' WHERE Username='$username' AND Password='$oldpassword'";
+
+    echo "here!!!";
 
     // Login successful
     if($conn->query($sql) === TRUE){
