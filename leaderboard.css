@@ -1,0 +1,107 @@
+.navbar{
+    background: rgb(44,167,255);
+    background: radial-gradient(circle, rgba(44,167,255,1) 0%, rgba(178,223,255,1) 0%, rgba(246,251,255,1) 10%, rgba(0,148,255,1) 15%, rgba(63,175,255,1) 100%);
+    font-family: calibri;
+    /* position: sticky; */
+    /*border-style: dashed;
+    border-width: 2px;
+    border-color: black;*/
+}
+.navdiv{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /*border-style: dashed;
+    border-width: 2px;
+    border-color: black;*/
+}
+
+.slogan {
+    margin-left: 50px;
+    color: white;
+    font-style: italic;
+    font-size: large;
+    /*border-style: dashed;
+    border-width: 2px;
+    border-color: black;*/
+}
+
+.logo {
+    margin-left: 35px;
+    font-size: xx-large;
+    color: white;
+    font-style: bold;
+
+    /*border-style: dashed;
+    border-width: 2px;
+    border-color: black;*/
+}
+
+.logo a{
+    font-size: 35px;
+
+    /*border-style: dashed;
+    border-width: 2px;
+    border-color: black;*/
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+
+    /*border-style: dashed;
+    border-width: 2px;
+    border-color: black;*/
+}
+
+li a {
+    margin-right: 50px;
+    color: white;
+
+    /*border-style: dashed;
+    border-width: 2px;
+    border-color: black;*/
+}
+
+.wraper {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.podium {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 500px;
+}
+.bar {
+    width: 120px;
+    background-color: #ddd;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.bar:nth-child(1) {
+    height: 150px; /* Bronze */
+    background-color: #cd7f32;
+}
+.bar:nth-child(2) {
+    height: 300px; /* Gold */
+    background-color: #ffd700;
+}
+.bar:nth-child(3) {
+    height: 225px; /* Silver */
+    background-color: #c0c0c0;
+}
+.label {
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    color: black;
+}
