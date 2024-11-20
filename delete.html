@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <title>HTML Elements Reference</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    </head>
+
+<body>
+    <div class="main">
+        <h1>RatatoUTD</h1>
+        <h3>Enter your credentials to DELETE ACCOUNT!</h3>
+        <form id="loginForm3" action="delete.php" method="POST">
+            <label for="first">
+                Username:
+            </label>
+            <input type="text" name="username" id="user3"
+                placeholder="Enter your Username" required>
+
+            <label for="password">
+                Password:
+            </label>
+            <input type="password" name="password" id="pswd3"
+                placeholder="Enter your Old Password" required>
+
+            <div class="wrap">
+                <a href="index.html">
+                    <button actype="submit" value="change">
+                        Delete!!! Cannot be undone
+                    </button>
+                </a>
+                
+            </div>
+        </form>
+    </div>
+    <script src="validate3.js"></script>
+</body>
