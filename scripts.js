@@ -1,33 +1,27 @@
-console.log("Script loaded");
 
-function Review(name, pfp, location, review, favItem, favItemComment) {
-  this.name = name;
-  this.pfp = pfp;
-  this.location = location;
-  this.review = review;
-  this.favItem = favItem;
-  this.favItemComment = favItemComment;
-}
 
-let myArr = [];
 
-for (let index = 0; index < 20; index++) {
-  myArr[index] = new Review(
-    "David",
-    "assets/pfpIcon.png",
-    "Taco Bell",
-    "Love this place with alll my heart oml thisd place is the best ting to ever ha[pp[en to the UTD campus ongodd no capulations my fam",
-    "Alcoholic Baja Blast",
-    "The only thing you should order here"
-  );
-}
-
-document.querySelector("#reviewTable tbody").innerHTML = myArr
-  .map(
-    (Review) =>
-      `<tr><td>${Review.name}</td><td><img src=${Review.pfp} style="width: 50px; height: 50px"></td><td>${Review.location}</td><td>${Review.review}</td><td>${Review.favItem}</td><td>${Review.favItemComment}</td></tr>`
-  )
-  .join("");
+document.addEventListener("DOMContentLoaded", function() {
+  fetch("getReview.php")
+    .then(response => response.json())
+    .then(reviews => {
+      const tableBody = document.querySelector("#reviewTable tbody");
+      tableBody.innerHTML = reviews
+        .map(review => {
+          return `
+            <tr>
+              <td>${review.Username}</td>
+              <td>${review.Rev_id}</td>
+              <td>${review.Res_name}</td>
+              <td>${review.Rev_comment}</td>
+              <td>${review.Fav_item}</td>
+              <td>${review.I_comment}</td>
+            </tr>`;
+        })
+        .join("");
+    })
+    .catch(error => console.error("Error fetching reviews:", error));
+})
 
 plusButton.addEventListener("click", function () {
   addReview.classList.add("show");
