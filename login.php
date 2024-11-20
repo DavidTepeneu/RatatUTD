@@ -5,14 +5,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $conn = new mysqli("localhost", "root", "", "ratatutd");
+    $conn = new mysqli("localhost", "root", "", "ratatutd", "3306");
 
     if($conn->connect_error){
         die("Connection failed: ". $conn->connect_error);
     }
 
     $query = "SELECT * FROM users WHERE Username='$username' AND Password='$password'";
-    echo $password;
+    
     $result = $conn->query($query);
     
     // Login successful
@@ -22,8 +22,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     // Login failed
     else{
-        $sql = "INSERT INTO users (Username, Password, Major, Fname, Lname, DOB, Classification, PFP) VALUES 
-                                    ('$username', '$password', 'CS', 'rat', 'the first', '1428', 'Senior', ':)')";
+        $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
         if (mysqli_query($conn, $sql)) {
             echo "New user created successfully";
             header("Location: homepage.html");
