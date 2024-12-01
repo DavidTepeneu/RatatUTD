@@ -29,3 +29,6 @@ Now, our MySQL database is set up and ready to use on our app. To open our webpa
 Once you have copied our folder into htdocs, click into the folder and locate index.html. Once you do, right-click index.html and open it in your browser of choice (personally, we prefer Google Chrome), which will successfully open our app on your device. 
 
 ![8](https://github.com/user-attachments/assets/7dd73257-cece-4873-addd-102f3b1827cb)
+
+Congrats, you have now successfully set up RatatUTD on your device. Happy reviewing!
+
